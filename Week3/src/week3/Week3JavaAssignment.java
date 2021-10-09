@@ -66,23 +66,54 @@ public class Week3JavaAssignment {
 		
 		String word = "Hello";
 		int n = 3;
-		concatenateWord(word,n);
+		concatenateWord(word, n);
 		
 		
 		// Problem 8
 		
 		String firstName = "Charlie";
 		String lastName = "Dukes";
-		createFullName(firstName,lastName);
+		createFullName(firstName, lastName);
 		
 		
 		// Problem 9
 		
 		int[] numbers = {23, 42, 43};
 		isGreaterThan100(numbers);
-	
+		
+		
+		// Problem 10
+		
+		double[] elements = {22.2, 33.3, 44.4};
+		returnAverage(elements);
+		
+		
+		// Problem 11
+		
+		double[] numbers1 = {12.3, 45.6, 78.9};
+		double[] numbers2 = {22.3, 55.6, 88.9};
+		isArrayAverageGreater(numbers1, numbers2);
+		
+		
+		// Problem 12
+		
+		boolean isHotOutside = true;
+		double moneyInPocket = 15.00;
+		willBuyDrink(isHotOutside, moneyInPocket);
+		
+		
+		// Problem 13
+		// Given the amount of hours in a day that the user has been playing New World, 
+		// return some advice for the gamer i.e., 0-3 hours returns "Keep up the grind!",
+		// 4-7 hours returns "Go grab some food.", 8+ hours returns "Go touch some grass..."
+		// This will keep us fellow gamers held accountable :)
+		
+		double hoursPlayed = 8.5;
+		whatShouldIdo(hoursPlayed);
+		
 	}
 
+	
 	// Method for Problem 7
 	
 	private static String concatenateWord(String word, int n) {
@@ -115,5 +146,50 @@ public class Week3JavaAssignment {
 		}
 	}
 
+
+	// Method for Problem 10
+	
+	private static double returnAverage(double[] elements) {
+		double sum = 0;
+		for (int i = 0; i < elements.length; i++) {
+			sum += elements[i];
+		}
+		return (sum / elements.length);
+	}
+	
+
+	// Method for Problem 11
+	private static boolean isArrayAverageGreater(double[] numbers1, double[] numbers2) {
+		if (returnAverage(numbers1) > returnAverage(numbers2)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	
+	// Method for Problem 12
+	
+	private static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
+		if (isHotOutside == true && moneyInPocket > 10.50) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+
+
+	// Method for Problem 13
+	
+	private static void whatShouldIdo(double hoursPlayed) {
+		if (hoursPlayed <= 3) {
+			System.out.println("Keep up the grind!");
+		} else if (hoursPlayed <= 7) {
+			System.out.println("Go grab some food.");
+		} else {
+			System.out.println("Go touch some grass...");
+		}
+	}
 
 }
