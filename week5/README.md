@@ -5,4 +5,4 @@ passed into its methods. If the log method received “Hello” as an argument, 
 (i.e. ERROR: H e l l o).
 
 ## Application
-* ![alt text](https://i.postimg.cc/j5hr8nqX/Screen-Shot-2021-11-13-at-10-25-53-PM.png)
+![alt text](https://i.postimg.cc/j5hr8nqX/Screen-Shot-2021-11-13-at-10-25-53-PM.png)
