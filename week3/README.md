@@ -1,4 +1,4 @@
-# Java Coding Problems
+# Java Exercises
 Various coding exercises that cover the following concepts:
 * Accessing values in arrays
 * Using loops
